@@ -1,0 +1,9 @@
+A grid item is positioned using the grid of its parent.
+
+An element can be both:
+- a grid item in its parent's grid
+- a grid container for its own children
+
+grid-column on .nested affects .nested inside #content.
+
+grid-template-columns on .nested defines the grid used by the <p> elements inside it.
