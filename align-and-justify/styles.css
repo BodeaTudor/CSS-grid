@@ -1,0 +1,47 @@
+body {
+    color: #fff;
+    font-family: 'Nunito Semibold', sans-serif;
+    text-align: center;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+
+    /* align is used to for up and down */
+    /* default is stretch */
+    /*align-items: end;*/
+
+    /* justify is used for left and right*/
+    /* default is stretch */
+    /*justify-items: start;*/
+}
+
+#content div {
+    background: #3bbced;
+    padding: 30px;
+}
+
+#content div:nth-child(even) {
+    background: #777;
+}
+
+.one {
+    /* the justify and align self properties are used to target a single element */
+    justify-self: end;
+    align-self: end;
+}
+
+.two {
+    justify-self: center;
+    align-self: center;
+}
+
+.three {
+    justify-self: start;
+    align-self: start;
+}
