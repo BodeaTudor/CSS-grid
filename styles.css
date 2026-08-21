@@ -1,11 +1,12 @@
 body {
     color: #fff;
-    font-family: 'Nunito Semibold';
+    font-family: 'Nunito Semibold', sans-serif;
     text-align: center;
 }
 
 #content {
     display: grid;
+                                        /* GRID COLUMNS*/
     /*grid-template-columns: 33.33% 33.33% 33.33%;*/
     /*grid-template-columns: 30% 20% 50%;*/
 
@@ -16,6 +17,28 @@ body {
     /* the repeat function -> first param - repeat something x amount of times */
     /*                     -> second param - what must be repeated */
     grid-template-columns: repeat(3, 1fr); /* the same as 1fr 1fr 1fr*/
+
+                                        /* GRID ROWS*/
+    /* by hardcoding the amount of height if the content of the element would take more space than 200px in height it will*/
+    /* get cut off */
+    /*grid-auto-rows: 200px;*/
+
+    /* to bypass that constraint, the minmax() function is used */
+    /* the minmax function takes 2 params - the minimum height of a row
+                                          - the maximum height of a row
+    */
+    /*grid-auto-rows: minmax(200px, auto);*/
+
+    /*grid-template-rows: 200px 300px 400px 200px;*/
+    /*grid-template-rows: repeat(3, 200px); !* translates to 'I need 3 rows, each of them with a height of 200px *!*/
+    grid-template-rows: repeat(3, minmax(200px, auto));
+
+    /* to add space/gap between the grid items the 'grid-column-gap' and 'grid-row-gap' properties are used or,
+       the shorthand version grid-gap */
+    /*grid-column-gap: 10px;*/
+    /*grid-row-gap: 10px;*/
+    grid-gap: 10px;
+
     max-width: 960px;
     margin: 0 auto;
 }
