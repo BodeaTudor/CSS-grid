@@ -1,0 +1,52 @@
+WHY USE CSS GRID?
+
+CSS Grid is useful for creating page layouts using rows and columns.
+
+It gives us more control over:
+- columns
+- rows
+- spacing between items
+- where elements are placed on the page
+
+Unlike Flexbox, which is mainly one-dimensional,
+CSS Grid is two-dimensional.
+
+Flexbox:
+- works mainly with one direction at a time
+- row OR column
+
+Grid:
+- works with rows AND columns at the same time
+
+CSS Grid is especially useful for:
+- page layouts
+- galleries
+- cards
+- sections with multiple rows and columns
+
+IMPORTANT:
+Grid does not replace Flexbox.
+
+Use:
+- Flexbox for simpler one-dimensional layouts
+- Grid for more complex two-dimensional layouts
+
+FLOATS
+
+float is an older CSS property.
+
+It was originally created to let text wrap around elements such as images.
+
+Example:
+float: left;
+
+Before Flexbox and Grid, floats were also used to create page layouts and columns.
+
+This caused many problems and made layouts harder to control.
+
+Today:
+- use Flexbox for one-dimensional layouts
+- use Grid for two-dimensional layouts
+- use float mainly when you actually want text to wrap around an element
+
+You do NOT need floats for modern page layouts.
