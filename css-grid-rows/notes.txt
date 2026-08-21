@@ -1,0 +1,6 @@
+The default behavior of rows is to be created when there is content.
+For example for a grid with 3 columns, and 9 elements, will result in having 3 columns and 3 rows even if the numbers of
+rows where not specified, because they are created automatically.
+
+The row height is by default governed by the amount of content in the element but, it can be overridden using the
+'grid-auto-rows' property.
