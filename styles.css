@@ -1,0 +1,31 @@
+body {
+    color: #fff;
+    font-family: 'Nunito Semibold';
+    text-align: center;
+}
+
+#content {
+    display: grid;
+    /*grid-template-columns: 33.33% 33.33% 33.33%;*/
+    /*grid-template-columns: 30% 20% 50%;*/
+
+    /* most of the time in css-grid the fractional 'fr' unit is used */
+    /*grid-template-columns: 1fr 1fr 1fr; !* translates to 'all columns must be the same fraction in width' *!*/
+    /*grid-template-columns: 1fr 2fr 1fr;*/
+
+    /* the repeat function -> first param - repeat something x amount of times */
+    /*                     -> second param - what must be repeated */
+    grid-template-columns: repeat(3, 1fr); /* the same as 1fr 1fr 1fr*/
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#content div {
+    background: #3bbced;
+    padding: 30px;
+}
+
+#content div:nth-child(even) {
+    background: #777;
+    padding: 30px;
+}
